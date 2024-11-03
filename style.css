@@ -22,7 +22,10 @@ nav ul li{
 
 }
 nav ul{
-    text-align:center;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
 }
 nav ul li a{
     border:1px #f7f7f7 solid;
@@ -37,7 +40,10 @@ nav ul li a{
 main{
     margin-top: 50px;
     margin-bottom:50px;
+    display: flex;
+    flex-direction: row;
     min-height:500px;
+    justify-content: space-between;
 }
 aside,article{
     float:left;
@@ -62,7 +68,19 @@ aside a{
     color:#363568;
 }
 article{
-    width:50%;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.down-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 footer{
     width:100%;
@@ -74,15 +92,53 @@ footer ul li{
 }
 .social-link img{
     width:30px;
+
+}
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 footer > div{
     width:33%;
     float:left;
 } 
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .gallery-container div{
-    float:left;
-    width:33%
+    max-width:33%;
 }
 .gallery-container div img{
     width:100%;
 }
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:#53423e;
+    text-decoration:none;
+}
+.contact-info div{
+    display: flex;
+    align-items: center;
+    margin:10px;
+    color:#53423e;
+    text-decoration:none;
+}
+.contact-info div img{
+    width: 25px;
+}
+.contact-info div a{
+    color:#53423e;
+    text-decoration:none;
+}
+.copyright-mark{
+    text-align: center;
+}   
